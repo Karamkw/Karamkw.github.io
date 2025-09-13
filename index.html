@@ -1,16 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karam Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #aaa;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    ul.skills li {
+      background: #eee;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Karam 👋</h1>
-  <p>Informatics Engineering student passionate about software development.</p>
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/Karamkw/buyro_app">Buyro App</a></li>
-    <li><a href="https://github.com/Karamkw/Jop_Spot">Job Spot</a></li>
-  </ul>
+
+  <!-- Header -->
+  <header>
+    <h1>Karam Kw</h1>
+    <p>Informatics Engineering Student | Flutter Developer</p>
+  </header>
+
+  <!-- About Me -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am an Informatics Engineering student passionate about software development and problem-solving. 
+      Experienced in mobile app development with Flutter, and eager to contribute my skills to innovative 
+      projects while collaborating effectively in a team.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Flutter</li>
+      <li>Dart</li>
+      <li>Firebase</li>
+      <li>REST APIs</li>
+      <li>Git & GitHub</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <!-- 👇 هون بتحط السكرينات -->
+        <img src="screenshots/buyro.png" alt="Buyro App Screenshot">
+        <h3>Buyro App</h3>
+        <p>A marketplace mobile application for buying and selling new and used products in Syria.</p>
+        <a href="https://github.com/karamuuu/buyro_app" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="screenshots/jobspot.png" alt="Job Spot App Screenshot">
+        <h3>Job Spot</h3>
+        <p>A job search platform connecting job seekers with companies. Users can apply for jobs and companies can post opportunities.</p>
+        <a href="https://github.com/Karamkw/Jop_Spot" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:karamalah.kweader@gmail.com">karamalah.kweader@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+    <p>GitHub: <a href="https://github.com/Karamkw" target="_blank">github.com/Karamkw</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Karam Kw. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
