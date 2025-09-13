@@ -28,7 +28,7 @@
       color: #aaa;
     }
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 20px;
     }
@@ -51,23 +51,29 @@
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
     .project-card {
       background: #fff;
       border: 1px solid #ddd;
       border-radius: 10px;
-      padding: 15px;
+      padding: 20px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .project-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
     }
     .project-card h3 {
       margin-top: 0;
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin: 15px 0;
+    }
+    .screenshots img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
     footer {
       text-align: center;
@@ -121,20 +127,34 @@
     <h2>Projects</h2>
     <div class="projects">
 
-      <!-- Project 1 -->
+      <!-- Project 1: Buyro -->
       <div class="project-card">
-        <!-- 👇 هون بتحط السكرينات -->
-        <img src="screenshots/buyro.png" alt="Buyro App Screenshot">
         <h3>Buyro App</h3>
         <p>A marketplace mobile application for buying and selling new and used products in Syria.</p>
+        <div class="screenshots">
+          <!-- 👇 ضيف صورك بمجلد screens/buyro/ -->
+          <img src="screens/buyro/a.png" alt="Buyro Screenshot A">
+          <img src="screens/buyro/b.png" alt="Buyro Screenshot B">
+          <img src="screens/buyro/c.png" alt="Buyro Screenshot C">
+        </div>
         <a href="https://github.com/karamuuu/buyro_app" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 2: Job Spot -->
       <div class="project-card">
-        <img src="screenshots/jobspot.png" alt="Job Spot App Screenshot">
         <h3>Job Spot</h3>
         <p>A job search platform connecting job seekers with companies. Users can apply for jobs and companies can post opportunities.</p>
+        <div class="screenshots">
+          <!-- 👇 ضيف صورك بمجلد screens/j_s/ -->
+          <img src="screens/j_s/a.png" alt="Job Spot Screenshot A">
+          <img src="screens/j_s/b.png" alt="Job Spot Screenshot B">
+          <img src="screens/j_s/c.png" alt="Job Spot Screenshot C">
+          <img src="screens/j_s/d.png" alt="Job Spot Screenshot D">
+          <img src="screens/j_s/e.png" alt="Job Spot Screenshot E">
+          <img src="screens/j_s/f.png" alt="Job Spot Screenshot F">
+          <img src="screens/j_s/g.png" alt="Job Spot Screenshot G">
+          <img src="screens/j_s/h.png" alt="Job Spot Screenshot H">
+        </div>
         <a href="https://github.com/Karamkw/Jop_Spot" target="_blank">View on GitHub</a>
       </div>
 
